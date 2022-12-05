@@ -9,7 +9,7 @@ from sklearn.metrics import confusion_matrix,classification_report
 from sklearn.preprocessing import MinMaxScaler
 
 df = pd.read_csv(r"E:\Class notes\08_03_Logistic_Regression_Model\Iris.csv")
-df["Species"].replace({"Iris-setosa":0,"Iris-versicolor":1,"Iris-virginica":2},inplace=True)
+#df["Species"].replace({"Iris-setosa":0,"Iris-versicolor":1,"Iris-virginica":2},inplace=True)
 
 x = df.drop(["Species","Id"],axis=1)
 y = df["Species"]
